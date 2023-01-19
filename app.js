@@ -9,6 +9,7 @@ const hpp = require("hpp");
 const cors = require("cors");
 const csp = require("express-csp");
 const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 const compression = require("compression");
 
 const AppError = require("./utils/appError");
@@ -18,6 +19,7 @@ const userRouter = require("./routes/userRoutes");
 const reviewRouter = require("./routes/reviewRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const bookingRouter = require("./routes/bookingRoutes");
+const bookingController = require("./controllers/bookingController");
 
 const app = express();
 
@@ -98,7 +100,6 @@ csp.extend(app, {
         "unsafe-inline",
         "data:",
         "blob:",
-        // "wss://<HEROKU-SUBDOMAIN>.herokuapp.com:<PORT>/",
         "https://*.stripe.com",
         "https://*.mapbox.com",
         "https://*.cloudflare.com/",
@@ -121,6 +122,13 @@ const limiter = rateLimit({
   message: "Too many requests from this IP, please try again in an hour!"
 });
 app.use("/api", limiter);
+
+// Stripe webhook, BEFORE body-parser, because stripe needs the body as stream
+app.post(
+  "/webhook-checkout",
+  bodyParser.raw({ type: "application/json" }),
+  bookingController.webhookCheckout
+);
 
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: "10kb" }));
