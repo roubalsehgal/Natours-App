@@ -24,7 +24,7 @@ This app is a pet project, built for the purpose of honing my skills in full sta
 
 #### Tour Details :
 
-![tourOverview](https://github.com/roubalsehgal/Natours-App/blob/main/public/screenshots/tour-detail-screen.png)
+<img src="https://github.com/roubalsehgal/Natours-App/blob/main/public/screenshots/tour-detail-screen.png" width="640">
 
 #### LOGIN PAGE :
 
