@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src='./public/img/logo-green-round.png'/ height="200" width="200">
+  <img src='./public/img/logo-green-round.png'/ height="125" width="125">
   <h1>Natours App</h1>
   <p><strong>A Full-Stack web application specially designed for the people who love travelling and going on tour vacations.</strong></p>
 </div>
