@@ -4,6 +4,9 @@
   <p><strong>A Full-Stack web application specially designed for the people who love travelling and going on tour vacations.</strong></p>
 </div>
 
+Website can be viewed on this Link: <a href="https://natours-roubal.cyclic.app/"><b>Live</b></a><br>
+API documentation: <a href="https://documenter.getpostman.com/view/10296437/2s8ZDYYNBq"><b>Postman Documentor</b></a>
+
 ## Overview
 
 This platform allows it's users to book tour vacations to excite their adventurous spirit and spend a relaxeful time.
@@ -76,7 +79,7 @@ If you wish to play around with the code base in your local environment, do the 
 
     * SENDGRID_USERNAME=apikey
     * SENDGRID_PASSWORD=your sendgrid password
-    
+
     * STRIPE_PUBLIC_KEY=your stripe public key
     * STRIPE_SECRET_KEY=your stripe secret key
     * STRIPE_WEBHOOK_SECRET=your stripe web hook secret
