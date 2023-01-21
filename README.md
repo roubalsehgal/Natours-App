@@ -4,8 +4,8 @@
   <p><strong>A Full-Stack web application specially designed for the people who love travelling and going on tour vacations.</strong></p>
 </div>
 
-Website can be viewed on this Link: <a href="https://natours-roubal.cyclic.app/"><b>Live</b></a><br>
-API documentation: <a href="https://documenter.getpostman.com/view/10296437/2s8ZDYYNBq"><b>Postman Documentor</b></a>
+Website can be viewed on this Link: <a href="https://natours-roubal.cyclic.app/" target="_blank"><b>Live</b></a><br>
+API documentation: <a href="https://documenter.getpostman.com/view/10296437/2s8ZDYYNBq" target="_blank"><b>Postman Documentor</b></a>
 
 ## Overview
 
