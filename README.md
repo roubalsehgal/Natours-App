@@ -20,4 +20,4 @@ This app is a pet project, built for the purpose of honing my skills in full sta
 
 #### Home Page :
 
-<img src="https://github.com/roubalsehgal/Natours-App/blob/main/public/screenshots/home-screen.png" width="640">
+<img src="https://github.com/roubalsehgal/Natours-App/blob/main/public/screenshots/home-screen.png" height="640" width="640">
