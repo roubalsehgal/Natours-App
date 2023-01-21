@@ -11,7 +11,10 @@ router.get("/", authController.isLoggedIn, viewsController.getOverview);
 
 router.get("/tour/:slug", authController.isLoggedIn, viewsController.getTour);
 router.get("/login", authController.isLoggedIn, viewsController.getLoginForm);
+router.get("/signup", viewsController.getSignupForm);
 router.get("/me", authController.protect, viewsController.getAccount);
+router.get("/forgotpassword", viewsController.forgotPassword);
+router.get("/resetpassword/:resetToken", viewsController.resetPassword);
 
 router.get(
   "/my-tours",
@@ -25,5 +28,4 @@ router.post(
   authController.protect,
   viewsController.updateUserData
 );
-
 module.exports = router;
